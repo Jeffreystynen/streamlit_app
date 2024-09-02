@@ -8,14 +8,12 @@ This repository contains a Dockerized Streamlit application for training an XGBo
 
 - Docker must be installed on your system. You can download Docker Desktop from [Docker's official website](https://www.docker.com/products/docker-desktop).
 
-### Running the Application
 
-1. **Pull the Docker Image**
-
-   First, pull the Docker image from Docker Hub:
+- The Docker image must be pulled from Docker Hub:
 
    ```sh
    docker pull jeffreystynen/streamlit-xgboost:latest
+   ```
 
 # Running the XGBoost Streamlit Application
 
@@ -25,7 +23,7 @@ After pulling the Docker image from Docker Hub, start the Docker container with 
 
    ```sh
    docker run -p 8501:8501 jeffreystynen/streamlit-xgboost:latest
-
+   ```
 
 # Using the XGBoost Streamlit Application
 
@@ -66,4 +64,5 @@ If port 8501 is already in use by another application, you can map the container
 
 ```sh
 docker run -p <host_port>:8501 jeffreystynen/streamlit-xgboost:latest
+```
 
